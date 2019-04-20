@@ -6,6 +6,13 @@
 # Mac-specific files
 .DS_Store
 
+# Sonar files
+sonar.txt
+.sonarqube
+
+# Test Coverage
+**/lcov*
+
 # User-specific files
 *.suo
 *.user
