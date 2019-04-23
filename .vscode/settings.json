@@ -1,0 +1,8 @@
+{
+    "files.exclude": {
+        "**/.coverage": true,
+        "**/.sonarqube": true,
+        "**/bin": true,
+        "**/obj": true
+    }
+}
