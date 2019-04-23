@@ -7,7 +7,7 @@ namespace Docs.Tests.Parsers
     public class ParserBaseTest
     {
         [Fact]
-        public void Parser_ShouldThrowNotImplatedException()
+        public void Parser_ShouldThrowNotImplementedException()
         {
             var pb = new ParserBase();
             Assert.Throws<NotImplementedException>(() => pb.Parse());

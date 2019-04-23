@@ -7,7 +7,7 @@ namespace Docs.Tests.Formatters
     public class FormatterBaseTest
     {
         [Fact]
-        public void Formatter_ShouldThrowNotImplatedException()
+        public void Formatter_ShouldThrowNotImplementedException()
         {
             var fb = new FormatterBase();
             Assert.Throws<NotImplementedException>(() => fb.Format());
