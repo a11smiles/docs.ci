@@ -39,7 +39,8 @@
                 "${workspaceFolder}/test/Docs.Tests/Docs.Tests.csproj",
                 "/p:CollectCoverage=true",
                 "/p:CoverletOutputFormat=\"opencover,lcov\"",
-                "/p:CoverletOutput=../lcov"
+                "/p:CoverletOutput=../../.coverage/lcov",
+                "/p:Include=\"[Docs]*\""
             ],
             "problemMatcher": "$msCompile"
         },

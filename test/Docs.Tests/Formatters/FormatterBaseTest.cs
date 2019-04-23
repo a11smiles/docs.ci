@@ -7,10 +7,17 @@ namespace Docs.Tests.Formatters
     public class FormatterBaseTest
     {
         [Fact]
-        public void Formatter_ShouldThrowNotImplementedException()
+        public void Format_ShouldThrowNotImplementedException()
         {
             var fb = new FormatterBase();
-            Assert.Throws<NotImplementedException>(() => fb.Format());
+            Assert.Throws<NotImplementedException>(() => fb.Format(string.Empty));
+        }
+
+        [Fact]
+        public void FormatMarkdown_ShouldThrowNotImplementedException()
+        {
+            var fb = new FormatterBase();
+            Assert.Throws<NotImplementedException>(() => fb.FormatMarkdown(string.Empty, null));
         }
     }
 }
