@@ -26,16 +26,25 @@ namespace Docs.Formatters.Html {
             else if (type == FormatType.InlineHtml)
                 throw new NotImplementedException();
             else if (type == FormatType.HorizontalRule)
-                throw new NotImplementedException();
+                return FormatHorizontalRule();
             else if (type == FormatType.LineBreak)
-                throw new NotImplementedException();
+                return FormatLineBreak();
             else 
                 throw new FormatException();
         }
 
         private string FormatHeader(string text) {
             int count = text.TakeWhile(c => c == '#').Count();
+
             return String.Concat("<h", count, ">", text.Substring(count+1), "</h", count, ">");
+        }
+
+        private string FormatHorizontalRule() {
+            return "</hr>";
+        }
+
+        private string FormatLineBreak() {
+            return "</br>";
         }
     }
 }

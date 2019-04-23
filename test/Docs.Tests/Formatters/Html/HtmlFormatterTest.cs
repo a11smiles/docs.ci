@@ -103,6 +103,7 @@ namespace Docs.Tests.Formatters.Html
         {
             var hf = new HtmlFormatter();
             var result = hf.FormatMarkdown(string.Empty, FormatType.HorizontalRule);
+            Assert.True(result == "</hr>");
         }
 
         [Fact]
@@ -110,6 +111,7 @@ namespace Docs.Tests.Formatters.Html
         {
             var hf = new HtmlFormatter();
             var result = hf.FormatMarkdown(string.Empty, FormatType.LineBreak);
+            Assert.True(result == "</br>");
         }
     }
 }
